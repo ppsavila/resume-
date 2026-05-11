@@ -11,6 +11,12 @@ const projects = [
         type: "professional",
         featured: true,
         accentColor: "#f0a500",
+        videos: [
+            { src: "/videos/VIP_Header.mp4", label: "VIP Header", orientation: "portrait" },
+            { src: "/videos/Entrega_VIP.mp4", label: "VIP Reward Delivery", orientation: "portrait" },
+            { src: "/videos/PowerUp_Onboarding.mp4", label: "Power-Up Onboarding", orientation: "portrait" },
+            { src: "/videos/Library_Onboarding.mp4", label: "Library Onboarding", orientation: "portrait" },
+        ],
     },
     {
         id: 2,

@@ -78,17 +78,17 @@ export default function Projects() {
 }
 
 function ProjectCard({ project, index, large }) {
+    const pad = large ? 28 : 22;
     return (
         <motion.div
             custom={index} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
             className="card"
-            style={{ padding: large ? "28px" : "22px", display: "flex", flexDirection: "column" }}>
+            style={{ padding: pad, display: "flex", flexDirection: "column" }}>
 
-            {/* Top accent bar */}
             <div style={{
-                height: 3, borderRadius: "2px 2px 0 0",
+                height: 3,
                 background: `linear-gradient(90deg, ${project.accentColor}, transparent)`,
-                marginBottom: 20, marginLeft: -28, marginRight: -28, marginTop: -28,
+                marginBottom: 20, marginLeft: -pad, marginRight: -pad, marginTop: -pad,
                 borderRadius: "var(--radius-lg) var(--radius-lg) 0 0",
             }} />
 
